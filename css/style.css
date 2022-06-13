@@ -1,0 +1,293 @@
+@font-face {
+  font-family: "TTLakes";
+  src: url("../fonts/TTLakes-Regular.woff") format("woff");
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "TTLakes";
+  src: url("../fonts/TTLakes-Bold.woff") format("woff");
+  font-weight: 600;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "TTLakes";
+  src: url("../fonts/TTLakes-Medium.woff") format("woff");
+  font-weight: 500;
+  font-display: swap;
+  font-style: normal;
+}
+
+html {
+  box-sizing: border-box
+}
+
+*,
+:after,
+:before {
+  box-sizing: inherit
+}
+
+:focus {
+  outline: 2px solid #3698fb
+}
+
+svg {
+  width: 20px;
+  height: 20px;
+}
+
+body {
+  background-color: #f8f8f8;
+  color: #1B1C21;
+  font-family: "TTLakes", sans-serif;
+  margin: 0;
+  position: absolute;
+  scroll-behavior: smooth
+}
+
+a {
+  color: inherit;
+  text-decoration: none
+}
+
+.main {
+  display: flex;
+  flex-direction: column
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0
+}
+
+img {
+  max-width: 100%
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0
+}
+
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  border: 0;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px
+}
+
+.btn--reset {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  padding: 0
+}
+
+.sidebar-left {
+  width: 320px;
+	height: 100%;
+	min-height: 620px;
+  box-shadow: 16px 0 52px rgba(14, 24, 80, .2)
+}
+
+.sidebar-left__wrapper {
+  padding: 19px 24px 32px
+}
+
+.sidebar-left__main-menu {
+  display: flex;
+  justify-content: space-between
+}
+
+.main-menu {
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh
+}
+
+.main-menu__bottom,
+.main-menu__top {
+  display: flex;
+  flex-direction: column
+}
+
+.main-menu__top-header {
+  align-items: center;
+  display: flex;
+  gap: 16px;
+  margin-bottom: 22px
+}
+
+@media (min-width:360px) {
+  .main-menu__top-header {
+      margin-bottom: 20px
+  }
+}
+
+@media (min-width:768px) {
+  .main-menu__top-header {
+      margin-bottom: 47px
+  }
+}
+
+.main-menu__list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 32px
+}
+
+.main-menu__item {
+  padding: 7px 0
+}
+
+.main-menu__item:hover::before {
+  background: url(../img/menu_highlight.svg);
+  display: inline-block;
+	vertical-align: middle;
+	content: "";
+	position: relative;
+	left:-24px;
+	width: 4px;
+	height: 32px;
+}
+
+.main-menu__link {
+  color: #1b1c21;
+  font-size: 16px;
+  font-weight: 500
+}
+
+.main-menu__item--active .main-menu__link,
+.main-menu__link:hover {
+  color: #7e7e82
+}
+
+.main-menu__bottom {
+  margin-bottom: 8px;
+  margin-top: auto
+}
+
+@media (min-width:768px) {
+  .main-menu__bottom {
+      margin-bottom: 40px
+  }
+}
+
+.main-menu__btn {
+  height: 40px;
+  width: 40px
+}
+
+.main-menu__btn-wrapper {
+  align-items: center;
+  display: flex;
+  gap: 16px;
+  margin-bottom: 16px
+}
+
+
+.main-menu__btn-burger-close {
+  background: #FF3E79;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+}
+
+.main-menu__btn-call {
+  background: #FF3E79;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+}
+
+.main-menu__btn-chat {
+  background: #FF3E79;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+}
+
+.main-menu__btn-profile {
+  background: #FF3E79;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  
+}
+
+.main-menu__btn-search {
+  background: #FF3E79;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  display: block;
+  margin-left: auto
+}
+
+.contact__mail {
+  color: #1b1c21;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: -.2px;
+  line-height: 24px;
+  display: block;
+}
+
+.contact__tel {
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: -.6px;
+  line-height: 32px;
+  display: block;
+}
+.main-menu__lang {
+  display: flex;
+  gap: 7px
+}
+
+.main-menu__lang-btn {
+  font-size: 16px;
+  font-weight: 500;
+  height: 24px;
+  letter-spacing: -.2px;
+  line-height: 24px;
+  width: 24px
+}
+
+.main-menu__lang-btn--active,
+.main-menu__lang-btn:hover {
+  color: #7e7e82;
+  
+}
+
+.contact__tel:hover,
+.contact__mail:hover {
+  transform: scale(105%);
+  transition-duration:0.1s;
+  transform-origin: center;
+}
+
+.main-menu__btn:hover {
+  cursor: pointer;
+  opacity:0.6;
+  transition-duration:0.6s;
+}
+
