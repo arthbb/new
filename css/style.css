@@ -155,18 +155,22 @@ ul {
 }
 
 .main-menu__item {
-  padding: 7px 0
+  position: relative;
+padding: 7px 0;  
 }
 
-.main-menu__item:hover::before {
+.main-menu__item:hover::before{
   background: url(../img/menu_highlight.svg);
+  background-repeat: no-repeat;
   display: inline-block;
-	vertical-align: middle;
-	content: "";
-	position: relative;
-	left:-24px;
-	width: 4px;
-	height: 32px;
+  vertical-align: middle;
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -24px;
+  transform: translateY(-50%);
+  width: 4px;
+  height: 32px;
 }
 
 .main-menu__link {
